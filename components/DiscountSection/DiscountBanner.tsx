@@ -11,7 +11,7 @@ import { IoIosStar } from "react-icons/io";
 const DiscountBanner = () => {
   return (
     <div className="flex justify-between items-center text-white w-full ">
-      <div className="flex items-center text-2xl">
+      <div className="flex items-center text-xl">
         <span className=" font-semibold">Get</span>
         <span className="mx-1 font-semibold text-black rounded-lg px-1 bg-yellow-500">
           50%

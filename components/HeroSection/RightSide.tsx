@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar,FaHome,FaEnvelopeOpenText } from "react-icons/fa";
+import { FaHome,FaEnvelopeOpenText } from "react-icons/fa";
 import { TbTextScan2 } from "react-icons/tb";
 
 const RightSide = () => {
@@ -12,21 +12,18 @@ const RightSide = () => {
                 <FaHome className="text-4xl text-slate-600" />
               </div>
               <span className="text-slate-800">
-                All levels Dip,Bachelors,masters
+                All levels Dip,Bachelors,Masters
               </span>
             </div>
           </div>
-          <div className="">
             <div className="flex items-center gap-4">
               <div className="rounded-xl shadow-md border bg-white p-3">
                 <TbTextScan2 className="text-4xl text-slate-600" />
               </div>
               <span className="text-slate-800">
-                Free plaigarism Scan
+                Free Plagiarism Scan
               </span>
             </div>
-          </div>
-          <div className="">
             <div className="flex items-center gap-4">
               <div className="rounded-xl shadow-md border bg-white p-3">
                 <FaEnvelopeOpenText className="text-4xl text-slate-600" />
@@ -35,7 +32,6 @@ const RightSide = () => {
                 MLA,APA Harvard & Oxford Citation
               </span>
             </div>
-          </div>
       </div>
     </div>
   );

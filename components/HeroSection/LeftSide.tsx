@@ -1,21 +1,36 @@
 import React from "react";
+import Image from "next/image";
+import arrowImage from "../../public/arrow.png";
 
 const LeftSide = () => {
   return (
-    <div className="flex justify-center items-center">
-        <div className="space-y-3 mt-10">
-          <h3 className="text-purple-700 font-medium">
-            <span className="text-purple-700">01.</span> Exclusive Help For Your UK</h3>
-            <h1 className="font-extrabold text-purple-700 text-4xl">ASSIGNMENT </h1>
-            <span className="text-4xl text-purple-600 font-extrabold">GET QUALITY HELP</span>
-            <div className="text-xl mt-1 text-purple-500 font-medium">
-            <span>By Leading UK PHD experts in your topic</span>
-            </div>
-            <div className="">
-            <button className="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md">Get Help Now</button>
-            </div>
-            
+    <div className="relative flex justify-center my-20 h-full">
+      <div className="absolute bottom-20 right-10">
+        <Image src={arrowImage} alt="arrow image" width={800} height={800}
+        className="rotate-45 w-[180px]" />
+      </div>
+      <div className=" px-10">
+        <h3 className="text-slate-600 font-medium">
+          <span className="text-slate-400">01.</span>
+          <span className="font-normal"> Exclusive Help For Your UK</span>
+        </h3>
+        <h1 className="font-extrabold mt-5 text-slate-900 text-5xl">
+          <span className="inline-block"> ASSIGNMENT </span>
+          <span className="inline-block"> GET QUALITY HELP</span>
+        </h1>
+
+        <div className="text-xl mt-5 text-slate-500 font-medium">
+          <span>By Leading UK PHD experts in your topic</span>
         </div>
+
+        <button
+          className="mt-5 bg-blue-800 hover:bg-slate-600
+          transition duration-300 ease-in-out uppercase
+           text-white font-semibold py-3 px-6 rounded-md"
+        >
+          Get Help Now
+        </button>
+      </div>
     </div>
   );
 };
